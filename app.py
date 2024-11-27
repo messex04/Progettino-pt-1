@@ -1,5 +1,6 @@
 
-from flask import Flask
+ from flask import Flask, render_template
+ #render_template: collegare file HTML.
 
 
  #inizializza l'app Flask
@@ -7,9 +8,11 @@ from flask import Flask
 
 #rotta principale
 
+
 @app.route('/')
-def home():
- return "Per ora funziona tutto"
+
+ def home():
+ return render_template('index.html')
 
 #avvio dell'app Flask
 
