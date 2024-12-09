@@ -14,7 +14,7 @@ def visualizza_lista(lista):
         print("La lista della spesa è vuota.")
    #4.Crea un metodo che rimuove l’elemento selezionato dall’utente dalla lista
         def rimuovi_elemento(lista, indice):
-    if 0 <= indice < len(lista):
+            if 0 <= indice < len(lista):
         elemento_rimosso = lista.pop(indice)
         print(f"{elemento_rimosso} è stato rimosso dalla lista.")
     else:
