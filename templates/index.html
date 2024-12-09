@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <h1>La lista della spesa di CHIRO</h1>
+    <h1>Lista della Spesa Del Messex</h1>
     
 
     {% if lista %}
@@ -37,11 +37,10 @@
         <button type="submit" style="margin-top: 10px;">Svuota la lista</button>
     </form>
     {% else %}
-    <!-- Messaggio mostrato se la lista è vuota -->
+    
     <p>La lista è vuota.</p>
     {% endif %}
-    
-    <!-- Form per aggiungere un nuovo elemento alla lista (metodo POST) -->
+  
     <form action="/aggiungi" method="post">
         <input type="text" name="elemento" placeholder="Aggiungi un elemento" required>
         <button type="submit">Aggiungi</button>
