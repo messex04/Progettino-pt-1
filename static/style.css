@@ -1,0 +1,47 @@
+#form-aggiungere {
+    max-width: 70%;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #4CAF50;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#form-aggiungere:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    border-color: #007BFF;
+}
+
+#zona-elementi {
+    max-width: 70%;
+    margin: auto;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px dashed #FF5733;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+li {
+    padding-bottom: 15px;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    color: #FF5733;
+}
+
+@media (max-width: 768px) {
+    #form-aggiungere, #zona-elementi {
+        max-width: 90%;
+    }
+
+    li {
+        font-size: 1em;
+    }
+}
